@@ -92,11 +92,6 @@ body {
   opacity: 0.5;
 }
 
-.game-over {
-  background-color: var(--accent);
-  opacity: 0.8;
-}
-
 .footer {
   padding-block: 2rem;
 }
