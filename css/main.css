@@ -78,11 +78,13 @@ body {
   font-family: inherit;
   font-size: var(--fs-large);
   font-weight: bold;
-  text-align: center;
   text-shadow: 0.2rem 0 var(--light);
 
   height: 12rem;
   width: 12rem;
+
+  display: grid;
+  place-items: center;
 
   cursor: pointer;
   transition: box-shadow ease-in-out 50ms, opacity ease-in-out 50ms;
