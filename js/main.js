@@ -38,7 +38,7 @@ function playAudio(key) {
 
 function getKey(event) {
   if (event.type === 'keydown') {
-    return event.key;
+    return String(event.key).toLowerCase();
   }
   return event.target.getAttribute('data-key');
 }
