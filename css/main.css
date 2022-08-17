@@ -78,6 +78,7 @@ body {
   font-family: inherit;
   font-size: var(--fs-large);
   font-weight: bold;
+  text-align: center;
   text-shadow: 0.2rem 0 var(--light);
 
   height: 12rem;
@@ -95,4 +96,3 @@ body {
 .footer {
   padding-block: 2rem;
 }
-
