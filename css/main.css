@@ -1,0 +1,103 @@
+/* =-=-=-=-=-=-=-=-=-= Import =-=-=-=-=-=-=-=-=-= */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+/* =-=-=-=-=-=-=-=-=-= General =-=-=-=-=-=-=-=-=-= */
+
+:root {
+  /* Colors */
+  --light: #ede7e3;
+  --shadow: #98c1d9;
+  --dark: #293241;
+  --accent: #ee6c4d;
+
+  /* Fonts */
+  --ff-regular: "Josefin Sans", sans-serif;
+
+  --fs-title: 8rem;
+  --fs-large: 5rem;
+  --fs-base: 1.6rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: var(--ff-regular);
+  font-size: var(--fs-base);
+  margin: 0;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* =-=-=-=-=-=-=-=-=-= Drum =-=-=-=-=-=-=-=-=-= */
+
+.container {
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-size: var(--fs-title);
+  margin: 0;
+  padding-block: 5rem;
+  text-shadow: 0.3rem 0 var(--accent);
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.key {
+  background-color: #fff;
+  color: var(--accent);
+
+  border-radius: 0.5rem;
+  border: 0.8rem solid var(--shadow);
+  outline: none;
+
+  font-family: inherit;
+  font-size: var(--fs-large);
+  font-weight: bold;
+  text-shadow: 0.2rem 0 var(--light);
+
+  height: 12rem;
+  width: 12rem;
+
+  cursor: pointer;
+  transition: box-shadow ease-in-out 50ms, opacity ease-in-out 50ms;
+}
+
+.playing {
+  box-shadow: 0 0.3rem 0.4rem 0 var(--light);
+  opacity: 0.5;
+}
+
+.game-over {
+  background-color: var(--accent);
+  opacity: 0.8;
+}
+
+.footer {
+  padding-block: 2rem;
+}
+
